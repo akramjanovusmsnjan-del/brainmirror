@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+    <title>BRAIN MIRROR — Raqamli tafakkur markazi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <div class="brand-icon">🧠</div>
+            <div>
+                <h2>BRAIN<span> MIRROR</span></h2>
+                <small>RAQAMLI TAFAKKUR</small>
+            </div>
+        </div>
+
+        <div class="nav-label">ASOSIY MENYU</div>
+
+        <nav>
+            <button class="nav-item active" data-page="home">
+                <span>⌂</span> Bosh sahifa
+            </button>
+            <button class="nav-item" data-page="tests">
+                <span>◈</span> Sinovlar
+            </button>
+            <button class="nav-item" data-page="progress">
+                <span>▥</span> Natijalar
+            </button>
+            <button class="nav-item" data-page="about">
+                <span>✧</span> Loyiha haqida
+            </button>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="brain-mini">✧</div>
+            <p>Har kuni o'z ustingda ishla.</p>
+            <small>TAFAKKUR — ENG KUCHLI QUROL</small>
+        </div>
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <button class="menu-btn" id="menuBtn">☰</button>
+            <div class="breadcrumb">BRAIN MIRROR <span>/</span> <b id="pageName">Bosh sahifa</b></div>
+            <div class="top-right">
+                <span class="online-dot"></span>
+                <span class="online-text">Tizim faol</span>
+                <div class="avatar">B</div>
+            </div>
+        </header>
+
+        <!-- BOSH SAHIFA -->
+        <section class="page active" id="home">
+
+            <div class="welcome">
+                <div>
+                    <div class="eyebrow">✦ RAQAMLI TAFAKKUR MARKAZI</div>
+                    <h1>MIYANGNI <span>SINOVDAN</span><br>O'TKAZ!</h1>
+                    <p>Xotirangni mustahkamla. Diqqatingni jamla.<br>
+                    Mantiqiy fikrlashingni rivojlantir.</p>
+                    <button class="primary-btn" id="startBtn">
+                        SINOVNI BOSHLASH <span>→</span>
+                    </button>
+                </div>
+                <div class="hero-brain">
+                    <div class="brain-ring ring-one"></div>
+                    <div class="brain-ring ring-two"></div>
+                    <div class="brain-circle">🧠</div>
+                    <div class="floating-tag tag-one">+ TAFAKKUR</div>
+                    <div class="floating-tag tag-two">NEURAL SYSTEM</div>
+                </div>
+            </div>
+
+            <div class="section-heading">
+                <div>
+                    <h2>Shaxsiy ko'rsatkichlar</h2>
+                    <p>Bugungi natijalaring va umumiy faoliyating</p>
+                </div>
+                <span class="live-label">● JONLI STATISTIKA</span>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>JAMI BALL</span>
+                        <span class="stat-icon">✦</span>
+                    </div>
+                    <h2 id="totalScore">0</h2>
+                    <small>To'plangan ball</small>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>BAJARILGAN SINOVLAR</span>
+                        <span class="stat-icon">◈</span>
+                    </div>
+                    <h2 id="totalTests">0</h2>
+                    <small>Jami mashqlar</small>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>TO'G'RI JAVOBLAR</span>
+                        <span class="stat-icon">✓</span>
+                    </div>
+                    <h2 id="accuracy">0%</h2>
+                    <small>Umumiy aniqlik</small>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>TAFAKKUR DARAJASI</span>
+                        <span class="stat-icon">⚡</span>
+                    </div>
+                    <h2 id="level">1</h2>
+                    <small id="levelName">Boshlovchi</small>
+                </div>
+            </div>
+
+            <div class="section-heading">
+                <div>
+                    <h2>Intellektual mashqlar</h2>
+                    <p>O'zingga mos sinovni tanla</p>
+                </div>
+                <button class="text-btn" data-goto="tests">Barchasi →</button>
+            </div>
+
+            <div class="tests-grid">
+                <div class="test-card" data-test="logic">
+                    <div class="test-icon">🧩</div>
+                    <span class="test-category">MANTIQ</span>
+                    <h3>Mantiqiy fikrlash</h3>
+                    <p>Topishmoqlar va mantiqiy savollarni yech.</p>
+                    <div class="test-footer">
+                        <span>5 ta savol</span>
+                        <button>→</button>
+                    </div>
+                </div>
+
+                <div class="test-card" data-test="memory">
+                    <div class="test-icon">🧠</div>
+                    <span class="test-category">XOTIRA</span>
+                    <h3>Xotira sinovi</h3>
+                    <p>Raqamlar ketma-ketligini eslab qol.</p>
+                    <div class="test-footer">
+                        <span>5 bosqich</span>
+                        <button>→</button>
+                    </div>
+                </div>
+
+                <div class="test-card" data-test="attention">
+                    <div class="test-icon">👁️</div>
+                    <span class="test-category">DIQQAT</span>
+                    <h3>Diqqat sinovi</h3>
+                    <p>Belgilar orasidan keraklisini tez top.</p>
+                    <div class="test-footer">
+                        <span>5 bosqich</span>
+                        <button>→</button>
+                    </div>
+                </div>
+
+                <div class="test-card" data-test="speed">
+                    <div class="test-icon">⚡</div>
+                    <span class="test-category">TEZKORLIK</span>
+                    <h3>Tezkor fikrlash</h3>
+                    <p>Vaqtga qarshi tezkor savollar.</p>
+                    <div class="test-footer">
+                        <span>5 ta savol</span>
+                        <button>→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="daily-card">
+                <div>
+                    <span class="eyebrow">✦ KUNLIK VAZIFA</span>
+                    <h2>Bugun miyangga yangi sinov ber!</h2>
+                    <p>Kunlik mashqni bajar va o'z natijangni kuzat.</p>
+                </div>
+                <button class="primary-btn" id="dailyBtn">BAJARISH →</button>
+            </div>
+        </section>
+
+        <!-- SINOVLAR -->
+        <section class="page" id="tests">
+            <div class="page-heading">
+                <span class="eyebrow">NEURAL TRAINING CENTER</span>
+                <h1>INTELLEKTUAL <span>SINOVLAR</span></h1>
+                <p>O'z qobiliyatlaringni turli mashqlar orqali rivojlantir.</p>
+            </div>
+
+            <div class="tests-grid full-grid">
+                <div class="test-card" data-test="logic">
+                    <div class="test-icon">🧩</div>
+                    <span class="test-category">01 / MANTIQ</span>
+                    <h3>Mantiqiy fikrlash</h3>
+                    <p>Ketma-ketliklar, matematik mantiq va topishmoqlar.</p>
+                    <div class="test-footer"><span>5 ta savol</span><button>→</button></div>
+                </div>
+
+                <div class="test-card" data-test="memory">
+                    <div class="test-icon">🧠</div>
+                    <span class="test-category">02 / XOTIRA</span>
+                    <h3>Xotira sinovi</h3>
+                    <p>Raqamlarni eslab qolish va qayta tiklash.</p>
+                    <div class="test-footer"><span>5 bosqich</span><button>→</button></div>
+                </div>
+
+                <div class="test-card" data-test="attention">
+                    <div class="test-icon">👁️</div>
+                    <span class="test-category">03 / DIQQAT</span>
+                    <h3>Diqqat sinovi</h3>
+                    <p>Belgilarni kuzatish va keraklisini aniqlash.</p>
+                    <div class="test-footer"><span>5 bosqich</span><button>→</button></div>
+                </div>
+
+                <div class="test-card" data-test="speed">
+                    <div class="test-icon">⚡</div>
+                    <span class="test-category">04 / TEZKORLIK</span>
+                    <h3>Tezkor fikrlash</h3>
+                    <p>Tezlik va aniqlikni talab qiladigan savollar.</p>
+                    <div class="test-footer"><span>5 ta savol</span><button>→</button></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NATIJALAR -->
+        <section class="page" id="progress">
+            <div class="page-heading">
+                <span class="eyebrow">YOUR PERFORMANCE</span>
+                <h1>SHAXSIY <span>NATIJALAR</span></h1>
+                <p>Bajarilgan mashqlar va erishilgan natijalar.</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-top">JAMI BALL</div>
+                    <h2 id="progressScore">0</h2>
+                    <small>To'plangan ball</small>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-top">SINOVLAR</div>
+                    <h2 id="progressTests">0</h2>
+                    <small>Bajarilgan mashqlar</small>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-top">ANIQLIK</div>
+                    <h2 id="progressAccuracy">0%</h2>
+                    <small>To'g'ri javoblar</small>
+                </div>
+            </div>
+
+            <div class="history-card">
+                <div class="section-heading">
+                    <div>
+                        <h2>Sinovlar tarixi</h2>
+                        <p>Oxirgi bajarilgan mashqlar</p>
+                    </div>
+                    <button class="text-btn" id="clearHistory">Tarixni tozalash</button>
+                </div>
+                <div id="historyList">
+                    <div class="empty-state">
+                        <span>◈</span>
+                        <p>Hozircha natijalar mavjud emas.</p>
+                        <small>Birinchi sinovingni bajar!</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOYIHA HAQIDA -->
+        <section class="page" id="about">
+            <div class="page-heading">
+                <span class="eyebrow">ABOUT THE PROJECT</span>
+                <h1>BRAIN <span>MIRROR</span></h1>
+                <p>O'z imkoniyatlaringni kashf et!</p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-brain">🧠</div>
+                <h2>Miyang — sening eng katta imkoniyating.</h2>
+                <p>BRAIN MIRROR — xotira, diqqat, mantiqiy fikrlash va tezkor qaror qabul qilish ko'nikmalarini mashq qilish uchun yaratilgan interaktiv platforma.</p>
+                <div class="about-features">
+                    <div>✦ 4 xil intellektual mashq</div>
+                    <div>✦ Natijalarni avtomatik saqlash</div>
+                    <div>✦ Shaxsiy rivojlanish statistikasi</div>
+                    <div>✦ Kunlik vazifalar</div>
+                </div>
+                <div class="author">BRAIN MIRROR <span>© 2026</span></div>
+            </div>
+        </section>
+
+        <!-- SINOV OYNASI -->
+        <section class="page" id="game">
+            <div class="game-top">
+                <button class="back-btn" id="exitGame">← ORQAGA</button>
+                <span class="eyebrow" id="gameCategory">INTELLEKTUAL SINOV</span>
+            </div>
+
+            <div class="game-card">
+                <div class="game-progress">
+                    <div class="progress-track"><div id="progressBar"></div></div>
+                    <span id="questionCount">1 / 5</span>
+                </div>
+
+                <div id="gameContent"></div>
+            </div>
+        </section>
+
+        <!-- YAKUNIY NATIJA -->
+        <section class="page" id="result">
+            <div class="result-card">
+                <div class="result-symbol">✦</div>
+                <span class="eyebrow">SINOV YAKUNLANDI</span>
+                <h1>BARAKALLA!</h1>
+                <p id="resultSubtitle">Sen sinovni yakunlading.</p>
+
+                <div class="result-score">
+                    <span>TO'PLANGAN BALL</span>
+                    <strong id="finalScore">0</strong>
+                    <small>/ 100</small>
+                </div>
+
+                <div class="result-details">
+                    <div>
+                        <strong id="finalCorrect">0</strong>
+                        <span>To'g'ri javob</span>
+                    </div>
+                    <div>
+                        <strong id="finalAccuracy">0%</strong>
+                        <span>Aniqlik</span>
+                    </div>
+                </div>
+
+                <button class="primary-btn" id="againBtn">YANA SINOV TOPSHIRISH →</button>
+                <button class="text-btn result-home" id="homeBtn">Bosh sahifaga qaytish</button>
+            </div>
+        </section>
+
+        <footer>
+            <span>BRAIN MIRROR © 2026</span>
+            <span>TAFAKKUR CHEGARASIZ <b>✦</b></span>
+        </footer>
+
+    </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
